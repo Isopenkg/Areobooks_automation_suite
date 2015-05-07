@@ -41,7 +41,7 @@ public class TestProfileSettingScreen {
     }
 
     @Test
-    public void _2firstAndLastNameMofication(){
+    public void _2firstAndLastNameModification(){
         user.setFirstName("Georgiy");
         user.setLastName("Isopenko");
         SettingsPage settingsPage = new SettingsPage(driver);
