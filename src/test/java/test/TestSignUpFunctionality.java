@@ -1,19 +1,15 @@
 package test;
 
+
 import data.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.LandingPage;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by techmagic on 03.05.15.
- */
-public class TestLoginFunctionality {
+public class TestSignUpFunctionality {
 
     WebDriver driver;
     User user;
@@ -24,43 +20,45 @@ public class TestLoginFunctionality {
         driver.get("http://127.0.0.1:8000/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
-    }
+           }
 
     @Test
-    public void verifyEmptyEmailAndPassword() {
+    public void verifyEmptyEmailAndPassword(){
         user.setUsername("");
         user.setPassword("");
         LandingPage landingPage = new LandingPage(driver);
-        landingPage.openLoginForm();
-        landingPage.login(user);
+        landingPage.openSignUpForm();
+        landingPage.signUp(user);
     }
 
     @Test
-    public void verifyEmptyPassword() {
+    public void verifyEmptyPassword(){
         user.setPassword("");
         LandingPage landingPage = new LandingPage(driver);
-        landingPage.login(user);
+        landingPage.signUp(user);
     }
 
     @Test
-    public void verifyInvalidUserLogin() {
-        user.setUsername("reader1@techmagic.co");
-        user.setPassword("1254678");
-        LandingPage landingPage = new LandingPage(driver);
-        landingPage.loginInvalidUser(user);
-    }
-
-    @Test
-    public void verifyLogIn() {
-        user.setUsername("reader2@techmagic.co");
+    public void verifyExistingEmail(){
+        user.setUsername("reader2@techamgic.co");
         user.setPassword("03123781");
         LandingPage landingPage = new LandingPage(driver);
-        landingPage.login(user);
-        landingPage.logOut();
+        landingPage.signUpExistingUser(user);
     }
 
+    @Test
+    public void verifySignIn() {
+        user.setUsername("reader20@techmagic.co");
+        user.setPassword("03123781");
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.signUp(user);
+    }
+
+    //add functionality to delete account reader20@techamgic.co!!!
+
     @AfterTest
-    public void finishTest() {
+    public void finishTest(){
         driver.quit();
     }
+
 }

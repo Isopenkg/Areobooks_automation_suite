@@ -1,17 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="6" total="13" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="trial.Test1" duration-ms="66" started-at="2015-05-02T17:53:11Z" finished-at="2015-05-02T17:53:11Z">
+  <suite name="Surefire suite" duration-ms="112701" started-at="2015-05-04T14:48:41Z" finished-at="2015-05-04T14:50:34Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="66" started-at="2015-05-02T17:53:11Z" finished-at="2015-05-02T17:53:11Z">
-      <class name="trial.Test1">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:trial.Test1@1586b489]" name="testApp" duration-ms="26" started-at="2015-05-02T20:53:11Z" finished-at="2015-05-02T20:53:11Z">
+    <test name="Surefire test" duration-ms="112701" started-at="2015-05-04T14:48:41Z" finished-at="2015-05-04T14:50:34Z">
+      <class name="test.TestSignUpFunctionality">
+        <test-method status="PASS" signature="verifyEmptyEmailAndPassword()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="verifyEmptyEmailAndPassword" duration-ms="2654" started-at="2015-05-04T17:50:15Z" finished-at="2015-05-04T17:50:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testApp -->
-      </class> <!-- trial.Test1 -->
-    </test> <!-- Command line test -->
-  </suite> <!-- trial.Test1 -->
+        </test-method> <!-- verifyEmptyEmailAndPassword -->
+        <test-method status="PASS" signature="verifyEmptyPassword()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="verifyEmptyPassword" duration-ms="1819" started-at="2015-05-04T17:50:17Z" finished-at="2015-05-04T17:50:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyPassword -->
+        <test-method status="PASS" signature="verifyExistingEmail()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="verifyExistingEmail" duration-ms="2337" started-at="2015-05-04T17:50:19Z" finished-at="2015-05-04T17:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyExistingEmail -->
+        <test-method status="FAIL" signature="verifySignIn()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="verifySignIn" duration-ms="12286" started-at="2015-05-04T17:50:21Z" finished-at="2015-05-04T17:50:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element didn't appeared in expected time - 0 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
+	at org.testng.Assert.fail(Assert.java:94)
+	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
+	at pages.LandingPage.signUp(LandingPage.java:80)
+	at test.TestSignUpFunctionality.verifySignIn(TestSignUpFunctionality.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignIn -->
+      </class> <!-- test.TestSignUpFunctionality -->
+      <class name="test.TestLoginFunctionality">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="setUp" is-config="true" duration-ms="7070" started-at="2015-05-04T17:48:41Z" finished-at="2015-05-04T17:48:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="setUp" is-config="true" duration-ms="6285" started-at="2015-05-04T17:48:48Z" finished-at="2015-05-04T17:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="setUp" is-config="true" duration-ms="5691" started-at="2015-05-04T17:48:55Z" finished-at="2015-05-04T17:49:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyEmptyEmailAndPassword()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="verifyEmptyEmailAndPassword" duration-ms="2494" started-at="2015-05-04T17:49:00Z" finished-at="2015-05-04T17:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyEmailAndPassword -->
+        <test-method status="PASS" signature="verifyEmptyPassword()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="verifyEmptyPassword" duration-ms="1580" started-at="2015-05-04T17:49:03Z" finished-at="2015-05-04T17:49:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyPassword -->
+        <test-method status="PASS" signature="verifyInvalidUserLogin()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="verifyInvalidUserLogin" duration-ms="2691" started-at="2015-05-04T17:49:05Z" finished-at="2015-05-04T17:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserLogin -->
+        <test-method status="FAIL" signature="verifyLogIn()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="verifyLogIn" duration-ms="13090" started-at="2015-05-04T17:49:07Z" finished-at="2015-05-04T17:49:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element didn't appeared in expected time - 0 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
+	at org.testng.Assert.fail(Assert.java:94)
+	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
+	at pages.LandingPage.login(LandingPage.java:106)
+	at test.TestLoginFunctionality.verifyLogIn(TestLoginFunctionality.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogIn -->
+        <test-method status="PASS" signature="finishTest()[pri:0, instance:test.TestLoginFunctionality@4a3f02bd]" name="finishTest" is-config="true" duration-ms="133" started-at="2015-05-04T17:50:34Z" finished-at="2015-05-04T17:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTest -->
+        <test-method status="PASS" signature="finishTest()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="finishTest" is-config="true" duration-ms="90" started-at="2015-05-04T17:50:34Z" finished-at="2015-05-04T17:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTest -->
+        <test-method status="PASS" signature="finishTest()[pri:0, instance:test.TestSignUpFunctionality@3f0ba812]" name="finishTest" is-config="true" duration-ms="93" started-at="2015-05-04T17:50:34Z" finished-at="2015-05-04T17:50:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTest -->
+      </class> <!-- test.TestLoginFunctionality -->
+      <class name="test.TestProfileSettingScreen">
+        <test-method status="FAIL" signature="_1linkForActivation()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="_1linkForActivation" duration-ms="13369" started-at="2015-05-04T17:49:20Z" finished-at="2015-05-04T17:49:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element didn't appeared in expected time - 0 seconds]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
+	at org.testng.Assert.fail(Assert.java:94)
+	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
+	at pages.LandingPage.signUp(LandingPage.java:80)
+	at test.TestProfileSettingScreen._1linkForActivation(TestProfileSettingScreen.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _1linkForActivation -->
+        <test-method status="FAIL" signature="_2firstAndLastNameMofication()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="_2firstAndLastNameMofication" duration-ms="10111" started-at="2015-05-04T17:49:34Z" finished-at="2015-05-04T17:49:44Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=css selector, value=#id_first_name}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=css selector, value=#id_first_name}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:76)
+	at test.TestProfileSettingScreen._2firstAndLastNameMofication(TestProfileSettingScreen.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _2firstAndLastNameMofication -->
+        <test-method status="FAIL" signature="_3firstAndLastNameEmpty()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="_3firstAndLastNameEmpty" duration-ms="10117" started-at="2015-05-04T17:49:44Z" finished-at="2015-05-04T17:49:54Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=css selector, value=#id_first_name}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=css selector, value=#id_first_name}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy5.clear(Unknown Source)
+	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:76)
+	at test.TestProfileSettingScreen._3firstAndLastNameEmpty(TestProfileSettingScreen.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _3firstAndLastNameEmpty -->
+        <test-method status="FAIL" signature="_4userEmailModification()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="_4userEmailModification" duration-ms="10517" started-at="2015-05-04T17:49:54Z" finished-at="2015-05-04T17:50:04Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='user-settings-form']/div[5]/input"}
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=.//*[@id='user-settings-form']/div[5]/input}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='user-settings-form']/div[5]/input"}
+Command duration or timeout: 10.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=.//*[@id='user-settings-form']/div[5]/input}
+Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at pages.SettingsPage.changeUserEmail(SettingsPage.java:87)
+	at test.TestProfileSettingScreen._4userEmailModification(TestProfileSettingScreen.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='user-settings-form']/div[5]/input"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _4userEmailModification -->
+        <test-method status="PASS" signature="_5userImageUpload()[pri:0, instance:test.TestProfileSettingScreen@16475614]" name="_5userImageUpload" duration-ms="10153" started-at="2015-05-04T17:50:04Z" finished-at="2015-05-04T17:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _5userImageUpload -->
+      </class> <!-- test.TestProfileSettingScreen -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

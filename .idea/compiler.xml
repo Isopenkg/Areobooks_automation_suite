@@ -26,5 +26,8 @@
         <module name="Areobooksautomation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Areobooksautomation" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

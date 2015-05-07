@@ -49,7 +49,9 @@ public class LandingPage extends AbstarctPage{
     @FindBy(css = ".error")
     WebElement errorText;
 
-
+    public void openLoginForm(){
+        loginButtonTop.click();
+    }
     public void openSignUpForm(){
         signUpButtonTop.click();
     }
@@ -65,22 +67,19 @@ public class LandingPage extends AbstarctPage{
         clearCredentials();
         eMailField.sendKeys(user.getUsername());
         passwordField.sendKeys(user.getPassword());
-
         submitLogSignIn.click();
 
-        if(user.getPassword().equals("") && user.getUsername().equals(""))
+        if(user.getPassword().equals("") && user.getUsername().equals("")) {
             Assert.assertEquals(errorText.getText(), ("Please enter a valid email address."));
+            }
 
-            else if(user.getUsername().equals("'"))
-            Assert.assertEquals(errorText.getText(), ("Please enter a valid email address."));
-
-
-            else if(user.getPassword().equals(""))
+            else if(user.getPassword().equals("")) {
             Assert.assertEquals(errorText.getText(), ("Please enter password."));
-
-        else
-        Assert.assertEquals(driver.getCurrentUrl(),"http://127.0.0.1:8000/accounts/settings/");
-
+            }
+            else {
+            waitForElement(500, userIcon);
+            Assert.assertEquals(driver.getCurrentUrl(), "http://127.0.0.1:8000/accounts/settings/");
+        }
     }
 
     public void signUpExistingUser(User user){
@@ -89,16 +88,45 @@ public class LandingPage extends AbstarctPage{
         passwordField.sendKeys(user.getPassword());
         submitLogSignIn.click();
         Assert.assertEquals(errorText.getText(), ("A user with this email address already exists."));
-
     }
 
     public void login(User user){
-        loginButtonTop.click();
+        clearCredentials();
         eMailField.sendKeys(user.getUsername());
         passwordField.sendKeys(user.getPassword());
         submitLogSignIn.click();
-        Assert.assertEquals(true, verifyIfElementIsDisplayed(userIcon));
+
+        if(user.getPassword().equals("") && user.getUsername().equals(""))
+            Assert.assertEquals(errorText.getText(), ("Please enter a valid email address."));
+
+            else if(user.getPassword().equals(""))
+            Assert.assertEquals(errorText.getText(), ("Please enter password."));
+
+            else {
+            waitForElement(5, userIcon);
+            verifyIfElementIsDisplayed(userIcon);
+        }
     }
+
+    public void loginInvalidUser(User user){
+        clearCredentials();
+        eMailField.sendKeys(user.getUsername());
+        passwordField.sendKeys(user.getPassword());
+        submitLogSignIn.click();
+        Assert.assertEquals(errorText.getText(), ("The email address or password you entered did not match our records. Please double-check and try again."));
+    }
+
+    public void logOut(){
+        userIcon.click();
+        logOutLink.click();
+        Assert.assertEquals(true, verifyIfElementIsDisplayed(loginButtonTop));
+        Assert.assertEquals(true, verifyIfElementIsDisplayed(signUpButtonTop));
+    }
+    public void openProfileSettings(){
+        userIcon.click();
+        accountSettingsLink.click();
+    }
+
 
 
 
