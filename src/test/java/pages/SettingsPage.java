@@ -35,7 +35,7 @@ public class SettingsPage extends AbstarctPage {
     @FindBy(xpath = ".//*[@id='user-settings-form']/div[5]/a")
     WebElement cancel;
 
-    @FindBy(css = ".reg-step-buttons-wrapper")
+    @FindBy(css = ".btn.medium-blue-btn.js-save-changes")
     WebElement submit;
 
     @FindBy(xpath = "//a[contains(text(),'Publish')]")
@@ -46,9 +46,6 @@ public class SettingsPage extends AbstarctPage {
 
     @FindBy(xpath ="//p[@class=\"info\"]")
     WebElement infoPanel;
-
-    @FindBy(xpath ="//p[@class=\"info\"][2]")
-    WebElement infoPanelTest;
 
     @FindBy(css = ".profile-image-upload-link")
     WebElement imageUploadLink;
@@ -77,7 +74,7 @@ public class SettingsPage extends AbstarctPage {
         lastNameField.clear();
         firstNameField.sendKeys(user.getFirstName());
         lastNameField.sendKeys(user.getLastName());
-        waitForElement(2500,submit);
+        waitForElement(3000,submit);
         submit.click();
     }
 
@@ -85,7 +82,7 @@ public class SettingsPage extends AbstarctPage {
         emailField.clear();
         emailField.sendKeys(user.getNewEmail());
         submit.click();
-        Assert.assertEquals(infoPanelTest.getText(),sessionErrors.getEmailModificationWarning(user.getUsername()));
+        Assert.assertEquals(infoPanel.getText(),sessionErrors.getEmailModificationWarning(user.getUsername()));
     }
     public void setProfileImage(User user) throws AWTException, InterruptedException {
         imageUploadLink.click();

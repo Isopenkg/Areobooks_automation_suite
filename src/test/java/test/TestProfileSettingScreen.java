@@ -70,7 +70,7 @@ public class TestProfileSettingScreen {
 
     @Test
     public void _4userEmailModification(){
-        user.setNewEmail("reader1001@techmagic.co");
+            user.setNewEmail("reader1001@techmagic.co");
         SettingsPage settingsPage = new SettingsPage(driver);
         settingsPage.changeUserEmail(user);
         LandingPage landingPage = new LandingPage(driver);
@@ -81,12 +81,14 @@ public class TestProfileSettingScreen {
 
     @Test
     public void _5userImageUpload(){
+
         user.setProfileImage("/home/techmagic/Areobooksautomation/ProfileImages/6a00d8341bfa9853ef017d40016258970c.png");
         SettingsPage settingsPage = new SettingsPage(driver);
 
         try {
             settingsPage.setProfileImage(user);
         }
+
         catch (Exception e){
          e.printStackTrace();
         }
