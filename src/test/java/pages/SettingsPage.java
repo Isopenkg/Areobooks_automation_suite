@@ -35,7 +35,7 @@ public class SettingsPage extends AbstarctPage {
     @FindBy(xpath = ".//*[@id='user-settings-form']/div[5]/a")
     WebElement cancel;
 
-    @FindBy(xpath = ".//*[@id='user-settings-form']/div[5]/input")
+    @FindBy(css = ".reg-step-buttons-wrapper")
     WebElement submit;
 
     @FindBy(xpath = "//a[contains(text(),'Publish')]")
@@ -77,7 +77,7 @@ public class SettingsPage extends AbstarctPage {
         lastNameField.clear();
         firstNameField.sendKeys(user.getFirstName());
         lastNameField.sendKeys(user.getLastName());
-        waitForElement(1000,submit);
+        waitForElement(2500,submit);
         submit.click();
     }
 
