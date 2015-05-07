@@ -18,7 +18,7 @@ public class LandingPage extends AbstarctPage{
     @FindBy(xpath = "//*[contains(text(),'Sign Up')]")
     WebElement signUpButtonTop;
 
-    @FindBy(xpath = ".//*[@id='dLabel']/div")
+    @FindBy(css = ".user-icon-wrapper")
     WebElement userIcon;
 
     @FindBy(xpath = "//div[2]/ul/li[1]/a")
