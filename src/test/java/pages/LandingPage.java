@@ -33,8 +33,6 @@ public class LandingPage extends AbstarctPage{
     @FindBy(xpath = "//*[contains(text(),'Log out')]")
     WebElement logOutLink;
 
-
-
 // Login page elements
 
     @FindBy(css = "#id_email")
@@ -43,7 +41,7 @@ public class LandingPage extends AbstarctPage{
     @FindBy(css = "#id_password")
     WebElement passwordField;
 
-    @FindBy(xpath= "//form/input[4]")
+    @FindBy(css= ".btn.medium-blue-btn.full-width-btn")
     WebElement submitLogSignIn;
 
     @FindBy(css = ".error")
