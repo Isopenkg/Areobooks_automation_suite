@@ -8,12 +8,15 @@ import org.testng.Assert;
 
 public class LandingPage extends AbstarctPage{
 
-    public LandingPage(WebDriver driver){
+    public LandingPage(WebDriver driver) {
         super(driver);
     }
-// landing page elements
+
+// Landing page elements
+
+
     @FindBy(xpath = "//*[contains(text(),'Login')]")
-    WebElement loginButtonTop;
+    public WebElement loginButtonTop;
 
     @FindBy(xpath = "//*[contains(text(),'Sign Up')]")
     WebElement signUpButtonTop;
@@ -36,7 +39,7 @@ public class LandingPage extends AbstarctPage{
 // Login page elements
 
     @FindBy(css = "#id_email")
-    WebElement eMailField;
+    public  WebElement eMailField;
 
     @FindBy(css = "#id_password")
     WebElement passwordField;
@@ -62,7 +65,9 @@ public class LandingPage extends AbstarctPage{
     }
 
     public void signUp(User user){
+
         clearCredentials();
+
         eMailField.sendKeys(user.getUsername());
         passwordField.sendKeys(user.getPassword());
         submitLogSignIn.click();
@@ -91,7 +96,9 @@ public class LandingPage extends AbstarctPage{
     public void login(User user){
         clearCredentials();
         eMailField.sendKeys(user.getUsername());
+
         passwordField.sendKeys(user.getPassword());
+
         submitLogSignIn.click();
 
         if(user.getPassword().equals("") && user.getUsername().equals(""))

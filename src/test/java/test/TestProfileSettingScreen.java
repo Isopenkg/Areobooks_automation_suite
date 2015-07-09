@@ -33,7 +33,7 @@ public class TestProfileSettingScreen {
     public void _1linkForActivation(){
         LandingPage landingPage = new LandingPage(driver);
         landingPage.openSignUpForm();
-        user.setUsername("reader100@techmagic.co");
+        user.setUsername("reader101@techmagic.co");
         user.setPassword("123456");
         landingPage.signUp(user);
         SettingsPage settingsPage = new SettingsPage(driver);
@@ -87,6 +87,7 @@ public class TestProfileSettingScreen {
 
         try {
             settingsPage.setProfileImage(user);
+
         }
 
         catch (Exception e){

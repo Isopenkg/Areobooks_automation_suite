@@ -9,7 +9,7 @@ import java.io.IOException;
 import static org.openqa.selenium.support.PageFactory.*;
 import static org.testng.Assert.fail;
 
-public class AbstarctPage {
+public abstract class AbstarctPage {
 
     public static WebDriver driver;
 
@@ -47,7 +47,7 @@ public class AbstarctPage {
         }
 
         catch (NoSuchElementException e) {
-            fail("Element didn't appeared in expected time - " + timeout / 1000 + " seconds");
+            fail("Element didn't appeared in expe   cted time - " + timeout / 1000 + " seconds");
             e.printStackTrace();
         }
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="93.259" tests="13" errors="0" skipped="0" failures="6">
+<testsuite name="TestSuite" time="84.123" tests="13" errors="0" skipped="0" failures="5">
   <properties>
     <property name="idea.version" value="14.0.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -11,7 +11,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7532"/>
+    <property name="idea.launcher.port" value="7538"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="3.13.0-51-generic"/>
+    <property name="os.version" value="3.13.0-53-generic"/>
     <property name="user.home" value="/home/techmagic"/>
     <property name="user.timezone" value="Europe/Uzhgorod"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -61,35 +61,28 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="verifyEmptyEmailAndPassword" classname="test.TestLoginFunctionality" time="2.495"/>
-  <testcase name="verifyEmptyPassword" classname="test.TestLoginFunctionality" time="1.581"/>
-  <testcase name="verifyInvalidUserLogin" classname="test.TestLoginFunctionality" time="2.691"/>
-  <testcase name="verifyLogIn" classname="test.TestLoginFunctionality" time="13.095">
+  <testcase name="verifyEmptyEmailAndPassword" classname="test.TestLoginFunctionality" time="2.516"/>
+  <testcase name="verifyEmptyPassword" classname="test.TestLoginFunctionality" time="1.69"/>
+  <testcase name="verifyInvalidUserLogin" classname="test.TestLoginFunctionality" time="2.472"/>
+  <testcase name="verifyLogIn" classname="test.TestLoginFunctionality" time="5.048"/>
+  <testcase name="_1linkForActivation" classname="test.TestProfileSettingScreen" time="13.334">
     <failure message="Element didn&apos;t appeared in expected time - 0 seconds" type="java.lang.AssertionError">java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
 	at org.testng.Assert.fail(Assert.java:94)
 	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.login(LandingPage.java:106)
-	at test.TestLoginFunctionality.verifyLogIn(TestLoginFunctionality.java:58)
-</failure>
-  </testcase>
-  <testcase name="_1linkForActivation" classname="test.TestProfileSettingScreen" time="13.369">
-    <failure message="Element didn&apos;t appeared in expected time - 0 seconds" type="java.lang.AssertionError">java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
-	at org.testng.Assert.fail(Assert.java:94)
-	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:80)
+	at pages.LandingPage.signUp(LandingPage.java:78)
 	at test.TestProfileSettingScreen._1linkForActivation(TestProfileSettingScreen.java:38)
 </failure>
   </testcase>
-  <testcase name="_2firstAndLastNameMofication" classname="test.TestProfileSettingScreen" time="10.123">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}&#10;Command duration or timeout: 10.11 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-51-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=css selector, value=#id_first_name}&#10;Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
-Command duration or timeout: 10.11 seconds
+  <testcase name="_2firstAndLastNameModification" classname="test.TestProfileSettingScreen" time="10.145">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}&#10;Command duration or timeout: 10.13 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=css selector, value=#id_first_name}&#10;Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.13 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
 *** Element info: {Using=css selector, value=#id_first_name}
-Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -104,27 +97,27 @@ Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssS
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
 	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:76)
-	at test.TestProfileSettingScreen._2firstAndLastNameMofication(TestProfileSettingScreen.java:48)
+	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
+	at test.TestProfileSettingScreen._2firstAndLastNameModification(TestProfileSettingScreen.java:48)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]></failure>
   </testcase>
-  <testcase name="_3firstAndLastNameEmpty" classname="test.TestProfileSettingScreen" time="10.126">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}&#10;Command duration or timeout: 10.11 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-51-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=css selector, value=#id_first_name}&#10;Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
-Command duration or timeout: 10.11 seconds
+  <testcase name="_3firstAndLastNameEmpty" classname="test.TestProfileSettingScreen" time="10.162">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}&#10;Command duration or timeout: 10.13 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=css selector, value=#id_first_name}&#10;Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
+Command duration or timeout: 10.13 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
 *** Element info: {Using=css selector, value=#id_first_name}
-Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -139,27 +132,27 @@ Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssS
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
 	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:76)
+	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
 	at test.TestProfileSettingScreen._3firstAndLastNameEmpty(TestProfileSettingScreen.java:62)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#id_first_name"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]></failure>
   </testcase>
-  <testcase name="_4userEmailModification" classname="test.TestProfileSettingScreen" time="10.523">
-    <failure message="Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;user-settings-form&apos;]/div[5]/input&quot;}&#10;Command duration or timeout: 10.08 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-51-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=xpath, value=.//*[@id=&apos;user-settings-form&apos;]/div[5]/input}&#10;Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='user-settings-form']/div[5]/input"}
-Command duration or timeout: 10.08 seconds
+  <testcase name="_4userEmailModification" classname="test.TestProfileSettingScreen" time="10.508">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn.medium-blue-btn.js-save-changes&quot;}&#10;Command duration or timeout: 10.10 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;&#10;*** Element info: {Using=css selector, value=.btn.medium-blue-btn.js-save-changes}&#10;Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".btn.medium-blue-btn.js-save-changes"}
+Command duration or timeout: 10.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
-*** Element info: {Using=xpath, value=.//*[@id='user-settings-form']/div[5]/input}
-Session ID: c42d0381-2ac5-49f8-bcd0-82135ca0b532
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
+*** Element info: {Using=css selector, value=.btn.medium-blue-btn.js-save-changes}
+Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=37.0.2}]
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -168,32 +161,32 @@ Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssS
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
 	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.SettingsPage.changeUserEmail(SettingsPage.java:87)
+	at pages.SettingsPage.changeUserEmail(SettingsPage.java:84)
 	at test.TestProfileSettingScreen._4userEmailModification(TestProfileSettingScreen.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='user-settings-form']/div[5]/input"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".btn.medium-blue-btn.js-save-changes"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-51-generic', java.version: '1.7.0_79'
+System info: host: 'techmagic-System-Product-Name', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-53-generic', java.version: '1.7.0_79'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous681520930534076189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
 ]]></failure>
   </testcase>
-  <testcase name="_5userImageUpload" classname="test.TestProfileSettingScreen" time="10.153"/>
-  <testcase name="verifyEmptyEmailAndPassword" classname="test.TestSignUpFunctionality" time="2.657"/>
-  <testcase name="verifyEmptyPassword" classname="test.TestSignUpFunctionality" time="1.821"/>
-  <testcase name="verifyExistingEmail" classname="test.TestSignUpFunctionality" time="2.339"/>
-  <testcase name="verifySignIn" classname="test.TestSignUpFunctionality" time="12.286">
+  <testcase name="_5userImageUpload" classname="test.TestProfileSettingScreen" time="10.172"/>
+  <testcase name="verifyEmptyEmailAndPassword" classname="test.TestSignUpFunctionality" time="2.224"/>
+  <testcase name="verifyEmptyPassword" classname="test.TestSignUpFunctionality" time="1.512"/>
+  <testcase name="verifyExistingEmail" classname="test.TestSignUpFunctionality" time="2.166"/>
+  <testcase name="verifySignIn" classname="test.TestSignUpFunctionality" time="12.174">
     <failure message="Element didn&apos;t appeared in expected time - 0 seconds" type="java.lang.AssertionError">java.lang.AssertionError: Element didn't appeared in expected time - 0 seconds
 	at org.testng.Assert.fail(Assert.java:94)
 	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:80)
+	at pages.LandingPage.signUp(LandingPage.java:78)
 	at test.TestSignUpFunctionality.verifySignIn(TestSignUpFunctionality.java:54)
 </failure>
   </testcase>

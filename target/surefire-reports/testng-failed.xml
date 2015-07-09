@@ -3,10 +3,19 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods">
     <classes>
+      <class name="test.TestProfileSettingScreen">
+        <methods>
+          <include name="_1linkForActivation"/>
+          <include name="setUp"/>
+          <include name="finishTest"/>
+          <include name="_2firstAndLastNameModification"/>
+          <include name="_3firstAndLastNameEmpty"/>
+          <include name="_4userEmailModification"/>
+        </methods>
+      </class> <!-- test.TestProfileSettingScreen -->
       <class name="test.TestLoginFunctionality">
         <methods>
           <include name="setUp"/>
-          <include name="verifyLogIn"/>
           <include name="finishTest"/>
         </methods>
       </class> <!-- test.TestLoginFunctionality -->
@@ -17,16 +26,6 @@
           <include name="finishTest"/>
         </methods>
       </class> <!-- test.TestSignUpFunctionality -->
-      <class name="test.TestProfileSettingScreen">
-        <methods>
-          <include name="_1linkForActivation"/>
-          <include name="setUp"/>
-          <include name="_2firstAndLastNameMofication"/>
-          <include name="finishTest"/>
-          <include name="_3firstAndLastNameEmpty"/>
-          <include name="_4userEmailModification"/>
-        </methods>
-      </class> <!-- test.TestProfileSettingScreen -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
