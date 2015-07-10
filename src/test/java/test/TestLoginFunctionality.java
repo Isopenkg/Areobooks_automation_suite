@@ -4,6 +4,7 @@ import data.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,8 +19,16 @@ public class TestLoginFunctionality {
 
     @BeforeTest
     public void setUp() {
-        driver = new FirefoxDriver();
+
         driver.get("https://areobooks.com");
+
+
+        FirefoxProfile profile = new FirefoxProfile();
+        profile.setPreference("webdriver.firefox.port", 99);
+        driver = new FirefoxDriver(profile);
+
+
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
     }

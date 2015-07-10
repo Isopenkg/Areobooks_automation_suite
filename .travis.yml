@@ -8,6 +8,8 @@ before_install:
   - "java -jar selenium-server-standalone-2.31.0.jar &"
   - "export GOCEPT_SELENIUM_BROWSER='*firefox'"
 
+
+
 script:
 - mvn clean
 - mvn test
