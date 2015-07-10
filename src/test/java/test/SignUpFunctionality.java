@@ -17,7 +17,7 @@ public class SignUpFunctionality {
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
-        driver.get("http://127.0.0.1:8000/");
+      //  driver.get("http://127.0.0.1:8000/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
     }
