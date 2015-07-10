@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2518181b-9bf4-4301-a409-7d5e1893c7b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Areobooksautomation.iws" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1260">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5124224" vertical-offset="225" max-vertical-offset="1260">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12116317" vertical-offset="0" max-vertical-offset="619">
+            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
@@ -136,10 +136,10 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/test/java/test/SignUpFunctionality.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/test/TestLoginFunctionality.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/ProfileSettingScreen.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -888,7 +888,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436543472793</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changing start test method.">
+      <created>1436543840785</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1436543840785</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -966,7 +972,8 @@
     <MESSAGE value="Modifing Firefox Dependency." />
     <MESSAGE value="Added selenium server dependecny." />
     <MESSAGE value="Changing to Chrome driver. &#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing to Chrome driver. &#10;&#10;" />
+    <MESSAGE value="Changing start test method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing start test method." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1290,14 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/TestLoginFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
@@ -1308,8 +1307,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12116317" vertical-offset="0" max-vertical-offset="619">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5124224" vertical-offset="225" max-vertical-offset="1260">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding />
         </state>
       </provider>
