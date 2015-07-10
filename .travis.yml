@@ -4,8 +4,8 @@ addons:
 firefox: "38.0"
 
 before_install:
-  - "export DISPLAY=:7055"
-  - "sh -e /etc/init.d/xvfb start"
+  - gem install selenium-webdriver
+
 
 
 script:
