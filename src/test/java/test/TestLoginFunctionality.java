@@ -2,6 +2,7 @@ package test;
 
 import data.User;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -17,7 +18,7 @@ public class TestLoginFunctionality {
 
     @BeforeTest
     public void setUp() {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.get("https://areobooks.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
