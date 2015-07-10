@@ -18,7 +18,7 @@ public class TestLoginFunctionality {
 
     @BeforeTest
     public void setUp() {
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.get("https://areobooks.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();

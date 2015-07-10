@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 27 15:51:29 EEST 2015</td>
+<td>Started on:</td><td>Fri Jul 10 18:02:54 EEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>120 seconds (120219 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19142 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,322 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.TestProfileSettingScreen._1linkForActivation()'><b>_1linkForActivation</b><br>Test class: test.TestProfileSettingScreen</td>
-<td><div><pre>java.lang.AssertionError: Element didn&apos;t appeared in expected time - 0 seconds
-	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:78)
-	at test.TestProfileSettingScreen._1linkForActivation(TestProfileSettingScreen.java:38)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564293164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace564293164'><pre>java.lang.AssertionError: Element didn&apos;t appeared in expected time - 0 seconds
-	at org.testng.Assert.fail(Assert.java:94)
-	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:78)
-	at test.TestProfileSettingScreen._1linkForActivation(TestProfileSettingScreen.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>13</td>
-<td>test.TestProfileSettingScreen@4a3f02bd</td></tr>
-<tr>
-<td title='test.TestProfileSettingScreen._2firstAndLastNameModification()'><b>_2firstAndLastNameModification</b><br>Test class: test.TestProfileSettingScreen</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-Command duration or timeout: 10.13 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=#id_first_name}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
-	at test.TestProfileSettingScreen._2firstAndLastNameModification(TestProfileSettingScreen.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1084584308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1084584308'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-Command duration or timeout: 10.13 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=#id_first_name}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
-	at test.TestProfileSettingScreen._2firstAndLastNameModification(TestProfileSettingScreen.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-</pre></div></td>
-<td>10</td>
-<td>test.TestProfileSettingScreen@4a3f02bd</td></tr>
-<tr>
-<td title='test.TestProfileSettingScreen._3firstAndLastNameEmpty()'><b>_3firstAndLastNameEmpty</b><br>Test class: test.TestProfileSettingScreen</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-Command duration or timeout: 10.13 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=#id_first_name}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
-	at test.TestProfileSettingScreen._3firstAndLastNameEmpty(TestProfileSettingScreen.java:62)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995241152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1995241152'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-Command duration or timeout: 10.13 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=#id_first_name}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.clear(Unknown Source)
-	at pages.SettingsPage.changeUserFirstAndLasName(SettingsPage.java:73)
-	at test.TestProfileSettingScreen._3firstAndLastNameEmpty(TestProfileSettingScreen.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_first_name&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-</pre></div></td>
-<td>10</td>
-<td>test.TestProfileSettingScreen@4a3f02bd</td></tr>
-<tr>
-<td title='test.TestProfileSettingScreen._4userEmailModification()'><b>_4userEmailModification</b><br>Test class: test.TestProfileSettingScreen</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn.medium-blue-btn.js-save-changes&quot;}
-Command duration or timeout: 10.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=.btn.medium-blue-btn.js-save-changes}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.SettingsPage.changeUserEmail(SettingsPage.java:84)
-	at test.TestProfileSettingScreen._4userEmailModification(TestProfileSettingScreen.java:75)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn.medium-blue-btn.js-save-changes&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1581618563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1581618563'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn.medium-blue-btn.js-save-changes&quot;}
-Command duration or timeout: 10.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=css selector, value=.btn.medium-blue-btn.js-save-changes}
-Session ID: 30c045c4-7d32-4cb6-afd9-198a7d011506
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
-	at com.sun.proxy.$Proxy5.click(Unknown Source)
-	at pages.SettingsPage.changeUserEmail(SettingsPage.java:84)
-	at test.TestProfileSettingScreen._4userEmailModification(TestProfileSettingScreen.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn.medium-blue-btn.js-save-changes&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;techmagic-System-Product-Name&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-53-generic&apos;, java.version: &apos;1.7.0_79&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10271)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous5602585832704139906webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
-</pre></div></td>
-<td>10</td>
-<td>test.TestProfileSettingScreen@4a3f02bd</td></tr>
-<tr>
-<td title='test.TestSignUpFunctionality.verifySignIn()'><b>verifySignIn</b><br>Test class: test.TestSignUpFunctionality</td>
-<td><div><pre>java.lang.AssertionError: Element didn&apos;t appeared in expected time - 0 seconds
-	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:78)
-	at test.TestSignUpFunctionality.verifySignIn(TestSignUpFunctionality.java:54)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131792104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace131792104'><pre>java.lang.AssertionError: Element didn&apos;t appeared in expected time - 0 seconds
-	at org.testng.Assert.fail(Assert.java:94)
-	at pages.AbstarctPage.waitForElement(AbstarctPage.java:50)
-	at pages.LandingPage.signUp(LandingPage.java:78)
-	at test.TestSignUpFunctionality.verifySignIn(TestSignUpFunctionality.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>12</td>
-<td>test.TestSignUpFunctionality@16475614</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -391,45 +75,25 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestProfileSettingScreen._5userImageUpload()'><b>_5userImageUpload</b><br>Test class: test.TestProfileSettingScreen</td>
-<td></td>
-<td>10</td>
-<td>test.TestProfileSettingScreen@4a3f02bd</td></tr>
-<tr>
 <td title='test.TestLoginFunctionality.verifyEmptyEmailAndPassword()'><b>verifyEmptyEmailAndPassword</b><br>Test class: test.TestLoginFunctionality</td>
 <td></td>
-<td>2</td>
-<td>test.TestLoginFunctionality@3f0ba812</td></tr>
-<tr>
-<td title='test.TestSignUpFunctionality.verifyEmptyEmailAndPassword()'><b>verifyEmptyEmailAndPassword</b><br>Test class: test.TestSignUpFunctionality</td>
-<td></td>
-<td>2</td>
-<td>test.TestSignUpFunctionality@16475614</td></tr>
+<td>4</td>
+<td>test.TestLoginFunctionality@4a2c1b1c</td></tr>
 <tr>
 <td title='test.TestLoginFunctionality.verifyEmptyPassword()'><b>verifyEmptyPassword</b><br>Test class: test.TestLoginFunctionality</td>
 <td></td>
 <td>1</td>
-<td>test.TestLoginFunctionality@3f0ba812</td></tr>
-<tr>
-<td title='test.TestSignUpFunctionality.verifyEmptyPassword()'><b>verifyEmptyPassword</b><br>Test class: test.TestSignUpFunctionality</td>
-<td></td>
-<td>1</td>
-<td>test.TestSignUpFunctionality@16475614</td></tr>
-<tr>
-<td title='test.TestSignUpFunctionality.verifyExistingEmail()'><b>verifyExistingEmail</b><br>Test class: test.TestSignUpFunctionality</td>
-<td></td>
-<td>2</td>
-<td>test.TestSignUpFunctionality@16475614</td></tr>
+<td>test.TestLoginFunctionality@4a2c1b1c</td></tr>
 <tr>
 <td title='test.TestLoginFunctionality.verifyInvalidUserLogin()'><b>verifyInvalidUserLogin</b><br>Test class: test.TestLoginFunctionality</td>
 <td></td>
-<td>2</td>
-<td>test.TestLoginFunctionality@3f0ba812</td></tr>
+<td>1</td>
+<td>test.TestLoginFunctionality@4a2c1b1c</td></tr>
 <tr>
 <td title='test.TestLoginFunctionality.verifyLogIn()'><b>verifyLogIn</b><br>Test class: test.TestLoginFunctionality</td>
 <td></td>
-<td>5</td>
-<td>test.TestLoginFunctionality@3f0ba812</td></tr>
+<td>3</td>
+<td>test.TestLoginFunctionality@4a2c1b1c</td></tr>
 </table><p>
 </body>
 </html>
