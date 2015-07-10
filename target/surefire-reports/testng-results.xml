@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="32431" started-at="2015-07-10T16:59:12Z" finished-at="2015-07-10T16:59:45Z">
+  <suite name="Surefire suite" duration-ms="21370" started-at="2015-07-10T17:40:38Z" finished-at="2015-07-10T17:40:59Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="32431" started-at="2015-07-10T16:59:12Z" finished-at="2015-07-10T16:59:45Z">
+    <test name="Surefire test" duration-ms="21370" started-at="2015-07-10T17:40:38Z" finished-at="2015-07-10T17:40:59Z">
       <class name="test.TestLoginFunctionality">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="setUp" is-config="true" duration-ms="17510" started-at="2015-07-10T19:59:12Z" finished-at="2015-07-10T19:59:30Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="setUp" is-config="true" duration-ms="10774" started-at="2015-07-10T20:40:38Z" finished-at="2015-07-10T20:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyEmptyEmailAndPassword()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="verifyEmptyEmailAndPassword" duration-ms="5249" started-at="2015-07-10T19:59:30Z" finished-at="2015-07-10T19:59:35Z">
+        <test-method status="PASS" signature="verifyEmptyEmailAndPassword()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="verifyEmptyEmailAndPassword" duration-ms="3263" started-at="2015-07-10T20:40:49Z" finished-at="2015-07-10T20:40:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmptyEmailAndPassword -->
-        <test-method status="PASS" signature="verifyEmptyPassword()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="verifyEmptyPassword" duration-ms="1384" started-at="2015-07-10T19:59:35Z" finished-at="2015-07-10T19:59:36Z">
+        <test-method status="PASS" signature="verifyEmptyPassword()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="verifyEmptyPassword" duration-ms="1112" started-at="2015-07-10T20:40:52Z" finished-at="2015-07-10T20:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmptyPassword -->
-        <test-method status="PASS" signature="verifyInvalidUserLogin()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="verifyInvalidUserLogin" duration-ms="2495" started-at="2015-07-10T19:59:36Z" finished-at="2015-07-10T19:59:39Z">
+        <test-method status="PASS" signature="verifyInvalidUserLogin()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="verifyInvalidUserLogin" duration-ms="2065" started-at="2015-07-10T20:40:53Z" finished-at="2015-07-10T20:40:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidUserLogin -->
-        <test-method status="PASS" signature="verifyLogIn()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="verifyLogIn" duration-ms="5532" started-at="2015-07-10T19:59:39Z" finished-at="2015-07-10T19:59:44Z">
+        <test-method status="PASS" signature="verifyLogIn()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="verifyLogIn" duration-ms="3992" started-at="2015-07-10T20:40:55Z" finished-at="2015-07-10T20:40:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogIn -->
-        <test-method status="PASS" signature="finishTest()[pri:0, instance:test.TestLoginFunctionality@2713affb]" name="finishTest" is-config="true" duration-ms="142" started-at="2015-07-10T19:59:44Z" finished-at="2015-07-10T19:59:45Z">
+        <test-method status="PASS" signature="finishTest()[pri:0, instance:test.TestLoginFunctionality@677afc95]" name="finishTest" is-config="true" duration-ms="125" started-at="2015-07-10T20:40:59Z" finished-at="2015-07-10T20:40:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishTest -->
