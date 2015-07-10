@@ -4,7 +4,7 @@ addons:
 firefox: "38.0"
 
 before_install:
-  - "export DISPLAY=:99.0"
+  - "export DISPLAY=:7055"
   - "sh -e /etc/init.d/xvfb start"
 
 
