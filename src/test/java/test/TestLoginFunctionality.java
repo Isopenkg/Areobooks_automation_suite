@@ -19,7 +19,7 @@ public class TestLoginFunctionality {
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
-        
+
         driver.get("https://areobooks.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
@@ -34,6 +34,7 @@ public class TestLoginFunctionality {
         landingPage.eMailField.sendKeys("123");
         landingPage.openLoginForm();
         landingPage.login(user);
+        System.out.println("test 1 pass");
     }
 
     @Test
@@ -41,6 +42,7 @@ public class TestLoginFunctionality {
         user.setPassword("");
         LandingPage landingPage = new LandingPage(driver);
         landingPage.login(user);
+        System.out.println("test 2 pass");
     }
 
     @Test
@@ -49,6 +51,7 @@ public class TestLoginFunctionality {
         user.setPassword("1254678");
         LandingPage landingPage = new LandingPage(driver);
         landingPage.loginInvalidUser(user);
+        System.out.println("test 2 pass");
     }
 
     @Test
@@ -58,6 +61,7 @@ public class TestLoginFunctionality {
         LandingPage landingPage = new LandingPage(driver);
         landingPage.login(user);
         landingPage.logOut();
+        System.out.println("test 2 pass");
     }
 
     @AfterTest
