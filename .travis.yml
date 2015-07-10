@@ -1,5 +1,4 @@
 language: java
-before_install:
 
 addons:
 firefox: "38.0"
