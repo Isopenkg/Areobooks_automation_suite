@@ -15,7 +15,7 @@ public class ProfileSettingScreen {
 
     WebDriver driver;
     User user;
-
+ /*
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
@@ -93,5 +93,8 @@ public class ProfileSettingScreen {
     @AfterTest
     public void finishTest(){
         driver.quit();
+
     }
+    */
+
 }

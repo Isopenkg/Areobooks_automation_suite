@@ -13,7 +13,7 @@ public class SignUpFunctionality {
 
     WebDriver driver;
     User user;
-
+ /*
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
@@ -64,5 +64,6 @@ public class SignUpFunctionality {
     public void finishTest(){
         driver.quit();
     }
+     */
 
 }
