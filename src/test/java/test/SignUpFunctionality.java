@@ -9,7 +9,7 @@ import pages.LandingPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class TestSignUpFunctionality {
+public class SignUpFunctionality {
 
     WebDriver driver;
     User user;

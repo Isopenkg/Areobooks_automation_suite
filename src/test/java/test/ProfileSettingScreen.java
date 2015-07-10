@@ -3,7 +3,6 @@ package test;
 import data.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.LocalFileDetector;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,11 +11,7 @@ import pages.SettingsPage;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by techmagic on 03.05.15.
- */
-
-public class TestProfileSettingScreen {
+public class ProfileSettingScreen {
 
     WebDriver driver;
     User user;

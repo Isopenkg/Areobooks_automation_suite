@@ -3,7 +3,6 @@ package test;
 import data.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -11,9 +10,6 @@ import pages.LandingPage;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by techmagic on 03.05.15.
- */
 public class TestLoginFunctionality {
 
     WebDriver driver;
@@ -22,7 +18,7 @@ public class TestLoginFunctionality {
     @BeforeTest
     public void setUp() {
         driver = new FirefoxDriver();
-        driver.get("http://127.0.0.1:8000/");
+        driver.get("https://areobooks.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         user = new User();
     }
@@ -55,7 +51,7 @@ public class TestLoginFunctionality {
 
     @Test
     public void verifyLogIn() {
-        user.setUsername("reader2@techmagic.co");
+        user.setUsername("georgiy.isopenko@techmagic.co");
         user.setPassword("03123781");
         LandingPage landingPage = new LandingPage(driver);
         landingPage.login(user);
