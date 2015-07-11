@@ -34,6 +34,8 @@ public class TestLoginFunctionality {
         landingPage.eMailField.sendKeys("123");
         landingPage.openLoginForm();
         landingPage.login(user);
+
+        
         System.out.println("test 1 pass");
     }
 
